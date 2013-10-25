@@ -1,0 +1,24 @@
+/* We can customize the theme CSS here */
+body {
+    color: darkgray;
+    background-color: #333; /* Colour outside of slide */
+}
+
+
+div.presentation, div.slide {
+  background-color: lightgray; /* colour of the slide */
+  color: #101010;
+}
+
+div.slide h1, div.slide h2, div.slide h3, div.slide h4, div.slide h5, div.slide 
+h6 {
+  color: #101010;
+  font-weight: normal;
+}
+
+
+img {
+	    max-width: 100%;
+	    height: auto;
+	    width: auto\9; /* ie8 */
+	}
