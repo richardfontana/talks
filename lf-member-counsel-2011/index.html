@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link href='http://fonts.googleapis.com/css?family=Cantarell:regular,italic,b
+old,bolditalic' rel='stylesheet' type='text/css'> 
+   <link href="http://kernest.com/fonts/comfortaa.css" media="screen" rel="style
+sheet" type="text/css" /> 
+ <link href="Cantarell-Regular.ttf" media="screen" rel="stylesheet" type="text/c
+ss" />
+
+<title>The AGPL</title>
+<!-- metadata -->
+<meta name="generator" content="Slide Show (S9)" />
+<meta name="version" content="S5 1.1" />
+<meta name="author" content="Richard Fontana" />
+<meta name="company" content="Red Hat, Inc." />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>The AGPL</h1>
+<h2>&copy; 2011 Red Hat, Inc.</h2>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+<h1>The AGPL</h1>
+<h2></h2>
+<h3>Richard Fontana</h3>
+<h4>Open Source Licensing and Patent Counsel</h4>
+<!-- <h4>Red Hat, Inc.</h4> -->
+<h4><img src="RHrgbjpg.jpg" height="58" width="180" /></h4> 
+</div>
+
+<div class='slide '>
+<h1 id="relevant-bio">Relevant bio</h1><ul>
+  <li>
+    <p>Open Source Licensing Counsel, Red Hat, 2008-present</p>
+  </li>
+  <li>
+    <p>Counsel, Software Freedom Law Center, 2005-2008</p>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="problem-statement">Problem statement</h1><p>When computing shifts from locally-run binary to receiving network
+services, how do you prevent the GPL from becoming equivalent to the
+BSD license?</p>
+
+
+</div>
+<div class='slide '>
+<h1 id="quick-history-lesson">Quick history lesson</h1><ul>
+  <li>Era 1
+    <ul>
+      <li>Elite academic/research users, big iron/minis</li>
+      <li>Software quasi-nonproprietary; code-sharing</li>
+    </ul>
+  </li>
+  <li>Era 2
+    <ul>
+      <li>Microprocessor HW ascendant  </li>
+      <li>Legal basis for software proprietization clarified</li>
+      <li>Client-server, networking standards (e.g. email MUA/MTA)</li>
+      <li>Free software movement (permissive &amp; copyleft traditions)</li>
+    </ul>
+  </li>
+  <li>Era 3
+    <ul>
+      <li>Internet boom/web era</li>
+      <li>LAMP stack on x86; collaborative development </li>
+      <li>Dotcom bubble; later Web 2.0 and open source bubbles</li>
+      <li>Cloud computing (SaaS, IaaS, PaaS)</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="copyleft-vs-permissive">Copyleft vs. permissive</h1><ul>
+  <li>Permissive: public domain/near-public-domain licenses</li>
+  <li>Copyleft (GPL, Stallman)
+    <ul>
+      <li>Nonenclosable commons by requiring distributors of binaries to provide complete corresponding source code</li>
+      <li>Right of private/internal modification (vs. &ldquo;Emacs Commune&rdquo;)</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="post-2000-web-services-model">Post-2000 web services model</h1><ul>
+  <li>Browser becomes delivery platform for applications</li>
+  <li>Computation shifts to serverside; serverside code may be based on GPL
+    <ul>
+      <li>e.g. Google Calculator/GNU Units	</li>
+    </ul>
+  </li>
+  <li>Service provider runs, but does not distribute, binary
+    <ul>
+      <li>Assumption: No source requirement even if based on GPL</li>
+    </ul>
+  </li>
+  <li>Concerns: modifications kept out of commons
+    <ul>
+      <li>general: clientside computation reproprietized on server</li>
+      <li>specific: &ldquo;loophole&rdquo; in GPL/copyleft</li>
+      <li>specific: SaaS companies with too much power over users</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="henry-poole-and-agplv1-2002">Henry Poole and AGPLv1 (2002)</h1><ul>
+  <li>Entrepreneur with close ties to FSF; founded Affero, Inc.</li>
+  <li>FSF permitted/assisted with new license based on GPLv2
+    <ul>
+      <li>Inspired by &ldquo;Quine&rdquo; program and legal notice UI preservation requirement in GPLv2</li>
+    </ul>
+  </li>
+  <li>Extra condition on right to modify: can&rsquo;t remove existing facility to request transmission of source, and must preserve functionality</li>
+  <li>Criticized by many GPL proponents; adopted by few projects</li>
+  <li>GPL-incompatible</li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="gplv3-2007">GPLv3 (2007)</h1><ul>
+  <li>
+    <p>Did not incorporate Affero clause</p>
+
+    <ul>
+      <li>
+        <p>&ldquo;To &lsquo;propagate&rsquo; a work means to do anything with it that, without permission, would make you directly or secondarily liable for infringement under applicable copyright law, except executing it on a computer or modifying a private copy. Propagation includes copying, distribution (with or without modification), making available to the public, and in some countries other activities as well.&rdquo;</p>
+      </li>
+      <li>
+        <p>&ldquo;To &lsquo;convey&rsquo; a work means any kind of propagation that enables other parties to make or receive copies. <strong>Mere interaction with a user through a computer network, with no transfer of a copy, is not conveying.</strong>&rdquo;</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="agplv3-2007">AGPLv3 (2007)</h1><ul>
+  <li>
+    <p>To satisfy competing interests, FSF drafted GPLv3 variant with new Affero clause, explicitly GPLv3-compatible</p>
+
+    <ul>
+      <li>&ldquo;if you modify the Program, your modified version must prominently
+ offer all users interacting with it remotely through a computer
+ network &hellip; an opportunity to receive the Corresponding Source of
+ your version by providing access to the Corresponding Source from a
+ network server at no charge, through some standard or customary means
+ of facilitating copying of software&rdquo;</li>
+    </ul>
+  </li>
+  <li>
+    <p>Corresponding Source: same definition as GPLv3</p>
+  </li>
+  <li>
+    <p>Must include CS of any GPLv3 code in &ldquo;single combined work&rdquo;
+  (AGPLv3)/&rdquo;combination as such&rdquo; (GPLv3)</p>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="meanwhile-at-the-osi">Meanwhile, at the OSI</h1><ul>
+  <li>
+    <p>Several approved licenses implement similar/more radical policies </p>
+
+    <ul>
+      <li>OSL 3.0 (original/derivatives)</li>
+      <li>CPAL (original/derivatives)</li>
+      <li>APSL 2.0 </li>
+      <li>RealNetworks PSL (derivatives/modifications/combinations)</li>
+      <li>Frameworx License (original/derivatives)</li>
+      <li>Reciprocal Public License (any internal (i) non-research organizational use, (ii) individual commercial use)</li>
+      <li>EUPL 1.1 (original/derivatives)</li>
+      <li>CDDL?</li>
+    </ul>
+  </li>
+  <li>
+    <p>Most predate AGPLv3; most &ldquo;corporate&rdquo; licenses</p>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="note-is-there-always-a-loophole">Note: is there always a loophole?</h1><ul>
+  <li>
+    <p>Jaeger: under German law, GPLv2 &ldquo;distribution&rdquo; includes providing
+network service based on remote execution of GPL&rsquo;d binary (?)</p>
+  </li>
+  <li>
+    <p>Most webapps distribute JavaScript (often in obfuscated form) to be executed in browser</p>
+
+    <ul>
+      <li>
+        <p>Does GPL-based serverside application have licensing implications
+for JavaScript it serves?</p>
+      </li>
+      <li>
+        <p>Does third-party GPL&rsquo;d JavaScript have licensing implications for
+serverside application?</p>
+      </li>
+      <li>
+        <p>Are the serverside application and the clientside application ever
+&ldquo;one work&rdquo; in GPL sense? (Aigrain)</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="license-interpretation">License interpretation</h1><ul>
+  <li>
+    <p>Five issues:</p>
+
+    <ul>
+      <li>What kinds of programs are subject to AGPL &sect; 13?</li>
+      <li>What actually triggers the source code requirement? </li>
+      <li>How much source code do you have to provide?</li>
+      <li>What are acceptable ways of making source code available?</li>
+      <li>Who is a &ldquo;user&rdquo; entitled to access source code?</li>
+    </ul>
+  </li>
+  <li>
+    <p>Historical case: Fedora infrastructure team flirted with AGPL</p>
+
+    <ul>
+      <li>Motivated by desire to use AGPL&rsquo;d Moksha web framework</li>
+      <li>Difficult questions arose for community-oriented web developers committed to scrupulous self-compliance</li>
+      <li>Webapps are frequently modified while publicly developed, tested and deployed</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="programs-subject-to-agplv3-sect-13">Programs subject to AGPLv3 &sect; 13</h1><ul>
+  <li>
+    <p>FSF FAQ: </p>
+
+    <ul>
+      <li>
+        <p>AGPL &sect; 13 applies to programs &ldquo;expressly designed to accept user requests and send responses over a network&rdquo;, such as &ldquo;web and mail servers&rdquo; and &ldquo;interactive web-based applications&rdquo;</p>
+      </li>
+      <li>
+        <p>Doesn&rsquo;t apply to program not so designed, though run in an
+environment where user interacts with it (e.g. user running app
+over SSH or in remote X session)</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="modification">Modification</h1><ul>
+  <li>
+    <p>&sect; 0: &ldquo;to copy from or adapt all or part of the work in a
+fashion requiring copyright permission, other than the making of an
+exact copy&rdquo; (late GPLv3 clarification attempt)</p>
+
+    <ul>
+      <li>
+        <p>&ldquo;copying from all of the work&rdquo; vs. &ldquo;making an exact copy&rdquo;?</p>
+      </li>
+      <li>
+        <p>My view: modular use of pristine upstream AGPL code should not trigger
+source requirement</p>
+      </li>
+      <li>
+        <p>What if you hotfix a webapp (e.g. to close a security hole)?</p>
+      </li>
+      <li>
+        <p>What if you make trivial change to a config file before deploying (e.g. modify filepath when running same app on different servers)? </p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="scope">Scope</h1><ul>
+  <li>
+    <p>Corresponding Source easier to figure out if you get a binary</p>
+  </li>
+  <li>
+    <p>If webapps and web servers are subject to AGPLv3 &sect; 13, is web
+server that serves webapp part of CS?</p>
+  </li>
+  <li>
+    <p>Webapps are typically built from large numbers of stock components </p>
+  </li>
+  <li>
+    <p>Fedora: </p>
+
+    <ul>
+      <li>
+        <p>Must at least provide what would go in GPL-compliant source
+tarball were webapp distributed as GPL&rsquo;d binary, plus shared
+libraries, and list additional dependencies</p>
+      </li>
+      <li>
+        <p>Should include patches/hotfixes that have been applied to base version</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="opportunity-to-receive">&ldquo;Opportunity to receive&rdquo;</h1><ul>
+  <li>
+    <p>Probably not sufficient:</p>
+
+    <ul>
+      <li>GPL-like offer-for-source</li>
+      <li>Mere link to project homepage (cf. StatusNet instances)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Link to source on each web page not necessary </p>
+  </li>
+  <li>
+    <p>Need to include all patches that have been applied</p>
+  </li>
+  <li>
+    <p>Relationship to SCM:</p>
+    <ul>
+      <li>Is merely pointing to source repo at no particular version enough (trunk may reflect further changes, including later reverts of earlier-applied patches</li>
+      <li>Do you need to point to branch/tag of exact version being run?</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="all-users">&ldquo;All users&rdquo;</h1><ul>
+  <li>
+    <p>FSF FAQ: &ldquo;all users&rdquo; does not include servers with which AGPL&rsquo;d clients interact </p>
+  </li>
+  <li>
+    <p>&ldquo;All users&rdquo; would seem to include any user of publicly-accessible test deployment (where there will be patches and local changes to base version)</p>
+
+    <ul>
+      <li>This may be undesirable to community developers of webapps</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="outcome-for-fedora-infrastructure">Outcome for Fedora Infrastructure</h1><ul>
+  <li>
+    <p>Someone in #fedora-infrastructure: &ldquo;AGPL good for freedom, but for people developing it is a bit of a pain&rdquo;</p>
+  </li>
+  <li>
+    <p>FI decided not to have &ldquo;default to AGPL&rdquo; policy for their webapps (instead default to GPLv2+, LGPL for libraries)</p>
+    <ul>
+      <li>AGPL app must have links in footer to SRPM and trac query pulling up hotfixes, so user can find exact source running at any one time</li>
+      <li>&ldquo;Staging&rdquo; apps must follow same rules</li>
+      <li>No AGPL apps on &lsquo;publictest boxes&rsquo; because &ldquo;high rate of change in development not conducive for constantly updating SRPMS or patches in trac&rdquo;
+        <ul>
+          <li>Or, need to design some method of restricting who can access apps running on publictest boxes </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="outcome-for-moksha">Outcome for Moksha</h1><ul>
+  <li>
+    <p>Grew in scope to be more than just a web framework; &ldquo;AGPL overhead unnecessary baggage&rdquo;</p>
+  </li>
+  <li>When presented at PyCon, devs were excited until they learned it was AGPL
+    <ul>
+      <li>Typical Python devs are freelancers for web services companies</li>
+      <li>AGPL &ldquo;drastically hindered adoption&rdquo;</li>
+    </ul>
+  </li>
+  <li>Moksha switched to Apache License 2.0</li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="agplv3-adoption">AGPLv3 adoption</h1><ul>
+  <li>Noteworthy projects
+    <ul>
+      <li>CiviCRM (CRM for NGOs/NPOs)</li>
+      <li>Diaspora (Facebook alternative)</li>
+      <li>Funambol Community Edition</li>
+      <li>Gitorious (project hosting)</li>
+      <li>GlusterFS (clustered file system)</li>
+      <li>Launchpad (project hosting)</li>
+      <li>MongoDB (database)</li>
+      <li>Neo4j (NoSQL database; GPLv3 &ldquo;Community&rdquo;, AGPLv3 &ldquo;Advanced&rdquo;/&rdquo;Enterprise&rdquo;)</li>
+      <li>StatusNet (Twitter alternative)</li>
+      <li>SugarCRM Community Edition</li>
+      <li>Zarafa (Microsoft Exchange replacement)</li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="agplv3-adoption-fedora-data">AGPLv3 Adoption: Fedora data</h1><ul>
+  <li>Caveat emptor!</li>
+  <li>
+    <p>Fedora 15 official repo </p>
+
+    <ul>
+      <li>June 2011 (~16672 binary RPMs):
+        <ul>
+          <li>AGPLv1 packages: 2 (partial)</li>
+          <li>AGPLv3 packages: 45 (~0.3%)
+            <ul>
+              <li>16 from Zarafa, 6 from GlusterFS</li>
+            </ul>
+          </li>
+          <li>One single-source-file AGPLv3 utility in OpenJDK</li>
+          <li>By contrast, GPLv3/LGPLv3 packages: ~1756 (~10.5%)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="why-has-agplv3-adoption-been-so-limited">Why has AGPLv3 adoption been so limited?</h1><ul>
+  <li>
+    <p>As a true community project license:</p>
+
+    <ul>
+      <li>
+        <p>FSF did very little to evangelize v3 licenses</p>
+      </li>
+      <li>
+        <p>GPLv3 growth leveraged existing dominance of GPL(v2); there were only
+handful of AGPLv1 projects</p>
+      </li>
+      <li>
+        <p>Pro-GPL developers unbothered by net services loophole</p>
+      </li>
+      <li>
+        <p>Semi-sympathetic devs: self-compliance burdensome</p>
+      </li>
+      <li>
+        <p>Web developers come from anti-copyleft tradition </p>
+      </li>
+      <li>
+        <p>Web devs employed by AGPL-hostile companies</p>
+      </li>
+      <li>
+        <p>Few AGPL projects with strong developer/user communities</p>
+      </li>
+      <li>
+        <p>Limited developer awareness of AGPL</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="why-has-agplv3-adoption-been-so-limited-1">Why has AGPLv3 adoption been so limited?</h1><ul>
+  <li>
+    <p>As a corporate-backed software license:</p>
+
+    <ul>
+      <li>
+        <p>Decline of dual-license business model (end of open source
+bubble)</p>
+      </li>
+      <li>
+        <p>Rising preference for permissive licenses for multi-corporate
+collaborative projects</p>
+      </li>
+      <li>
+        <p>Apparently little interest in mere use of license to discourage free-riding by competitor providers </p>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p>Association with disreputable business models may be limiting
+developer interest (and possibly corporate interest)</p>
+  </li>
+</ul>
+
+
+</div>
+<div class='slide '>
+<h1 id="conclusion">Conclusion</h1><p>Thank you.</p>
+
+<p>Email: <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#114;&#102;&#111;&#110;&#116;&#097;&#110;&#097;&#064;&#114;&#101;&#100;&#104;&#097;&#116;&#046;&#099;&#111;&#109;">&#114;&#102;&#111;&#110;&#116;&#097;&#110;&#097;&#064;&#114;&#101;&#100;&#104;&#097;&#116;&#046;&#099;&#111;&#109;</a></p>
+</div>
+
+
+</div> <!-- presentation -->
+
+</body>
+</html>
+
